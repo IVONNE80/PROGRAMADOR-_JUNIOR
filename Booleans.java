@@ -1,14 +1,8 @@
-import java.text.DecimalFormat;
 
 public class Booleans {
 
-   public Booleans(int n) {
-     intsPuedeAlmacenarDecimales=n {
-     if (n=float) {
-        return true;
-     } else {
-        return false;
-     }
-     
-
+   public static void main(String[] args) {
+      boolean instPAd = false;
+      System.out.println(instPAd);
+   }
 }

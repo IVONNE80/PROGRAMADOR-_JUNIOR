@@ -1,12 +1,8 @@
 public class Char {
-    /* IvONNE */
-    primera letra
-
-    public primera getLetra(I) {
-        return letra;
+    // IvONNE
+    public static void main(String[] args) {
+        String PrimeraLetra = "I";
+        System.out.println(PrimeraLetra);
     }
 
-    public void setLetra(primera letra) {
-        this.letra = letra;
-    }
 }
