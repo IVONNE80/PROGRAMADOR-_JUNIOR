@@ -1,11 +1,14 @@
 public class MiPerfil {
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
 
-    {
         String nombre = "Ivonne Hernandez";
-        int edad = 42;
+        int edad = 32;
         double salario = 6350.20;
         char genero = 'f';
-        String buscandoTrabajo = "nobuscando";
+        String buscandoTrabajo = "no_buscando";
         System.out.println("nombre:" + nombre);
         System.out.println("edad:" + edad);
         System.out.println("salario:" + salario);
