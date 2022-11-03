@@ -8,7 +8,7 @@ public class MiPerfil {
         int edad = 32;
         double salario = 6350.20;
         char genero = 'f';
-        String buscandoTrabajo = "no_buscando";
+        boolean buscandoTrabajo = false ;
         System.out.println("nombre:" + nombre);
         System.out.println("edad:" + edad);
         System.out.println("salario:" + salario);
