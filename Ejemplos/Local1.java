@@ -1,4 +1,4 @@
-public class Local {
+public class Local1 {
     public static void main(String[] args) {
         /* Variables locales */
         // Declaramos la variable
@@ -9,7 +9,7 @@ public class Local {
 
         // Instanciar objeto de tipo local
 
-        Local v1 = new Local();
+        Local1 v1 = new Local1();
         // Objeto v1 y el metodo saludo ()
         String f = "bony";
         Integer u = 10;
