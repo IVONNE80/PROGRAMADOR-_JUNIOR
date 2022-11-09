@@ -10,7 +10,7 @@ public class numeros {
         numeros[4] = 5;
         numeros[5] = 9;
         for (int i = 0; i < 7; i++) {
-            System.out.println(numeros[i]);
+            System.out.println("El arreglo en la posicion " + i + " tiene el numero " + numeros[i]);
         }
 
     }
