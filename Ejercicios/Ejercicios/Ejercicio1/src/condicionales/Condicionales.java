@@ -28,10 +28,22 @@ public class Condicionales {
             }
             
         }
-    }
-/**
- * @return Stirng: si es validad o no la contraseña
- */
-public String e2Contrasenia(String passBD){
-    System.out.println(passBD);
+        /**Ejercicio 3
+            Escribir un programa que pida al usuario dos números y muestre por pantalla su división. Si el divisor es cero el programa debe mostrar un error.
+        */
+        public String e2Contrasenia(String passBD){
+            System.out.println(passBD);
+            return "";
+        }
+        /**ejercicio 4 
+            Escribir un programa que pida al usuario un número entero y muestre por pantalla si es par o impar.
+         * @return
+         */
+        public String Numeros(){
+            System.out.print("Ingresar número: ");
+            int numero = sc.nextInt();
+            sc.close();
+            return numero%2==0 ? "par":"impar";
+        }     
 }
+

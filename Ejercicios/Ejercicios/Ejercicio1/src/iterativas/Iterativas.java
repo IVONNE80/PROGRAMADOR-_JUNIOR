@@ -11,7 +11,7 @@ public class Iterativas {
 
     public int e1Suma(){
     int suma = 0;
-    for (int i = 0; i <=n; i++){
+    for (int i = 0; i <=45; i++){
         suma+=i;
     }
     return suma;
