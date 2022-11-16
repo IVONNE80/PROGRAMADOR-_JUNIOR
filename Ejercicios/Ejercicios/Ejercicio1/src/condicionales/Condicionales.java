@@ -138,9 +138,15 @@ public class Condicionales {
      * Escribir un programa que lea la puntuación del usuario e indique su nivel de
      * rendimiento, así como la cantidad de dinero que recibirá el usuario.
      * 
+     * @param puntuacion
+     * 
      * @return
      */
     public String e7() {
+        System.out.print("Ingresa tu puntuacion:");
+        double puntuacion = sc.nextDouble();
+        System.out.print("indique su nivel");
+        double rendimiento = sc.nextDouble();
 
     }
 

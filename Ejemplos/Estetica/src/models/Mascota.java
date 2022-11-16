@@ -1,6 +1,6 @@
 package models;
 
-public class RecibeMascotas {
+public class Mascota {
 
     String perro;
 
@@ -12,7 +12,7 @@ public class RecibeMascotas {
 
     String dueno;
 
-    public RecibeMascotas(String perro, String edad, String raza, String tamano, String dueno) {
+    public Mascota(String perro, String edad, String raza, String tamano, String dueno) {
         this.perro = perro;
         this.edad = edad;
         this.raza = raza;
@@ -41,7 +41,7 @@ public class RecibeMascotas {
     }
 
     public String toString() {
-        return "perro: " + this.perro + "\n" + "edad: " + this.edad + "\n" + "raza: "
+        return "perro: " + this.perro + "\n" + "edad: " + this.edad + "\n" + "raza: " + this.raza + "\n" + "tamano:"
                 + this.tamano + "\n" + "dueno:" + this.dueno + "\n";
     }
 }
