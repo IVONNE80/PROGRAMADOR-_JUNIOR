@@ -12,8 +12,13 @@ public class Utils {
 
     public static void imprimeMascota(Mascota[] mascota) {
         for (Mascota m : mascota) {
-            System.out.println("==============");
-            System.out.println(m.toString());
+            System.out.println(m);
         }
+    }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return super.toString();
     }
 }

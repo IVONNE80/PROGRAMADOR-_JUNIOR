@@ -29,6 +29,6 @@ public class Mascota {
 
     @Override
     public String toString() {
-        return "nombre: " + this.nombre + "\n" + "tipo: " + this.tipo;
+        return "==============\nnombre: "+this.nombre+"\n"+"tipo: " + this.tipo +"\n"+ "sonido: "+this.sonido;
     }
 }

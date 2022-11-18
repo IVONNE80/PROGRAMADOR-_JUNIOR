@@ -56,8 +56,9 @@ public class RecibeMascota {
 
     @Override
     public String toString() {
-        return "RecibeMascota [perro=" + perro + ", edad=" + edad + ", raza=" + raza + ", tamano=" + tamano + ", dueno="
-                + dueno + "]";
+        return "------------\nnombre = " + perro + "\nedad = " + edad + "\nraza = " + raza + "\ntamano = " + tamano
+                + "\ndueno = "
+                + dueno;
     }
 
 }

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class App {
-    public static void main(String[] args) throws Exception {
+public static void main(String[] args) throws Exception {
         ArrayList<RecibeMascota> listaMascotas = new ArrayList<RecibeMascota>();
         listaMascotas.add(
                 new RecibeMascota(
@@ -73,6 +73,11 @@ public class App {
                         "cruza",
                         "mediano",
                         "Sara"));
+        for(RecibeMascota m: listaMascotas){
+                System.out.println(m);
+        }
         System.out.print("Perros actuales en la estetica: " + listaMascotas.size());
-    }
+        }
+        
 }
+
