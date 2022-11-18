@@ -1,12 +1,12 @@
 public class RecibeMascota {
 
-    String perro;
-    String edad;
-    String raza;
-    String tamano;
-    String dueno;
+    private String perro;
+    private int edad;
+    private String raza;
+    private String tamano;
+    private String dueno;
 
-    public RecibeMascota(String perro, String edad, String raza, String tamano, String dueno) {
+    public RecibeMascota(String perro, int edad, String raza, String tamano, String dueno) {
         this.perro = perro;
         this.edad = edad;
         this.raza = raza;
@@ -18,20 +18,40 @@ public class RecibeMascota {
         return perro;
     }
 
-    public String getEdad() {
+    public void setPerro(String perro) {
+        this.perro = perro;
+    }
+
+    public int getEdad() {
         return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 
     public String getRaza() {
         return raza;
     }
 
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+
     public String getTamano() {
         return tamano;
     }
 
+    public void setTamano(String tamano) {
+        this.tamano = tamano;
+    }
+
     public String getDueno() {
         return dueno;
+    }
+
+    public void setDueno(String dueno) {
+        this.dueno = dueno;
     }
 
     @Override
