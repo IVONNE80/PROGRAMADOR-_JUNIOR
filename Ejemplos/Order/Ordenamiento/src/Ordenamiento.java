@@ -31,33 +31,33 @@ public class Ordenamiento {
 
     }
 
-    public static void quickSort(int array[], int izq, int der) {
+    public static void quicksort(int array[], int izq, int der) {
         int pivote = array[izq];
         int i = izq;
-        int j = der;
+        int d = der;
         int aux;
-        while (i < j) {
-            while (array[i] <= pivote && i < j)
+        while (i < d) {
+            while (array[i] <= pivote && i < d){
                 i++;
-            while (array[j] > pivote)
-                j--;
-            {
-                if (i < j) {
-                    aux = array[i];
-                    array[i] = array[j];
-                    array[j] = aux;
-                }
             }
-            array[izq] = array[j];
-            array[j] = pivote;
-            if (izq < j - 1) {
-                quickSort(array, izq, der);
+            while (array[d] > pivote){
+                d--;
             }
-            if (j + 1 < der) {
-                quickSort(array, izq, der);
-
+            if (i < d) {
+                aux = array[i];
+                array[i] = array[d];
+                array[d] = aux;
             }
         }
+        array[izq] = array[d];
+        array[d] = pivote;
+        if (izq < d - 1) {
+            quicksort(array, izq, d-1);
+        }
+        if (d + 1 < der) {
+            quicksort(array, d+1, der);
+        }
+        
 
     }
 }
