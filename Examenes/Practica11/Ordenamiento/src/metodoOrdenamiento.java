@@ -1,19 +1,20 @@
-public class metodoOrdenamiento {
-    public void imprimeArreglo(String mensaje, int[] arreglo) {
-        int[] arreglos = new int[] { 11, 23, 9, 20 };
-        for (int i = 0; i < arreglos.length; i++) {
-			System.out.printf("Arreglos[%d] = %d\n", i, arreglos[i]);
+import java.util.Arrays;
 
+public class metodoOrdenamiento {
+
+    public void imprimeArreglo(String mensaje, int[] arreglo) {
+        int listas[] = { 11, 23, 9, 20 };
+        System.out.println(Arrays.toString(listas));
     }
 
     public void saltoLinea() {
 
         System.out.println("\n");
-
+        /* */
     }
 
     public static void main(String args[]) {
-        /* */
+
         metodoOrdenamiento objOrdena = new metodoOrdenamiento();
 
         objOrdena.imprimeArreglo("Arreglo inicial: ", arreglo);
