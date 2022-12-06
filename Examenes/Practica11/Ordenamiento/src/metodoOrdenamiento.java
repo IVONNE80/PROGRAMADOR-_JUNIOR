@@ -2,8 +2,8 @@ public class MetodoOrdenamiento {
 
     public void imprimeArreglo(String mensaje, int[] arreglo) {
         System.out.println(mensaje);
-        for (int i : arreglo){
-            System.out.print(i+" ");
+        for (int i : arreglo) {
+            System.out.print(i + " ");
         }
     }
 
@@ -12,7 +12,7 @@ public class MetodoOrdenamiento {
     }
 
     public static void main(String args[]) {
-        int[] arreglo = { 11, 23, 9, 20};
+        int[] arreglo = { 11, 23, 9, 20 };
         MetodoOrdenamiento objOrdena = new MetodoOrdenamiento();
         objOrdena.imprimeArreglo("Arreglo inicial: ", arreglo);
         objOrdena.saltoLinea();
@@ -26,7 +26,7 @@ public class MetodoOrdenamiento {
                     int aux = arreglo[j];
                     arreglo[j] = arreglo[j + 1];
                     arreglo[j + 1] = aux;
-                    
+
                     objOrdena.imprimeArreglo(" Arreglo modificado: ", arreglo);
                     objOrdena.saltoLinea();
                 }
