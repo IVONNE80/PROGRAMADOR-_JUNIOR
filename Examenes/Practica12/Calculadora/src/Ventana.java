@@ -1,24 +1,27 @@
 import javax.swing.*;
 import java.awt.*;
-
 public class Ventana extends JFrame {
-    String[] botones = { "7", "8", "9", "/", "4", "5", "6", "*", "1", "2", "3", "-", "c", "0", ".", "+" };
+    JTextField texto;
+    JButton resultado;
+    JButton teclado;
+    GridBagConstraints gbc; 
 
-    public Ventana(String titulo) {
-        super(titulo);
-        int filas, columnas, sepH, sepV;
-        setSize(300, 300);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        // definimos el grid
-        filas = 4;
-        columnas = 4;
-        sepH = 2;
-        sepV = 2;
-        setLayout(new GridLayout(filas, columnas, sepH, sepV));
-        // creamos 9 botones, # elementos filas*columnas
-        for (int i = 0; i < botones.length; i++) {
-            add(new JButton(botones[i]));
-        }
-
+   
+    public Ventana() {
+        super("Calculadora");
+        setSize(300,400);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLayout(new GridBagLayout());
+        texto = new JTextField();
+        resultado = new JButton("Resultado");
+        teclado = new JButton("Teclado");
+        gbc = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.g
+    
     }
+    
 }

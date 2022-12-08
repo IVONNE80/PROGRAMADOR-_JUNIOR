@@ -1,7 +1,7 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Ventana g = new Ventana("Calculadora");
+        Grid g = new Grid("Calculadora");
         g.setVisible(true);
     }
 }
