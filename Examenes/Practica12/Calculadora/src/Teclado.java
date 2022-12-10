@@ -1,8 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Teclado{
-    private static String[] botones = { "7", "8", "9", "/", "4", "5", "6", "*", "1", "2", "3", "-", "c", "0", ".", "+" };
+public class Teclado {
+    private static String[] botones = { "7", "8", "9", "/", "4", "5", "6", "*", "1", "2", "3", "-", "c", "0", ".",
+            "+" };
     private static int filas, columnas, sepH, sepV;
     private static Container tecladContainer;
     private static JButton[] botonesJ = new JButton[16];
@@ -23,16 +24,12 @@ public class Teclado{
 
     }
 
-    public static Container regresaTeclado(){
+    public static Container regresaTeclado() {
         crearContenedor();
         return tecladContainer;
     }
 
-    // TODO: identificar a cada boton
-    private void  crearBotones(String botone []){
-        Double resultado = 0.0;
-        String respuesta;
-        
+    private void crearBotones() {
 
     }
 }
