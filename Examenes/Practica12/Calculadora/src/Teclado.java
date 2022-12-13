@@ -20,6 +20,7 @@ public class Teclado {
         // creamos 16 botones, # elementos filas*columnas
         for (int i = 0; i < botones.length; i++) {
             tecladContainer.add(new JButton(botones[i]));
+
         }
 
     }
