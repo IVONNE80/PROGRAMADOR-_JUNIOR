@@ -1,18 +1,18 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import org.w3c.dom.events.Event;
+import java.awt.event.*;
 
-public class Ventana extends JFrame {
-    Container teclado;
+public class Ventana extends JFrame implements ActionListener{
     JButton[] botones = new JButton[16];
     JTextField texto;
     JButton resultado;
-    String pantalla;
+    String pantalla= "";
     Calculadora c = new Calculadora();
-
     GridBagConstraints gbc;
 
+    /**
+     * 
+     */
     public Ventana() {
         super("Calculadora");
         setSize(300, 400);
@@ -20,6 +20,7 @@ public class Ventana extends JFrame {
         setLayout(new GridBagLayout());
         texto = new JTextField();
         resultado = new JButton("Resultado");
+        resultado.addActionListener(this);
         gbc = new GridBagConstraints();
         // elemento 1
         gbc.gridx = 0;
@@ -37,40 +38,43 @@ public class Ventana extends JFrame {
         gbc.gridy = 2;
         gbc.weightx = 0.8;
         gbc.weighty = 0.8;
-        add(Teclado.regresaTeclado(), gbc);
+        add(crearBotones(),gbc);
+    }
 
     private Container crearBotones() {
-        Container t = Container();
-        t.setLayout( new GridLayout());
+        Container t = new Container();
+        t.setLayout( new GridLayout(4,4));
         String[] BOTONES_N = { "7", "8", "9", "/", "4", "5", "6", "*", "1", "2", "3", "-", "c", "0", ".",
             "+" };
-        for(int = 0; i< BOTONES_N.length;i++){
+        for(int i= 0; i< BOTONES_N.length;i++){
             JButton aux = new JButton(BOTONES_N[i]);
             aux.addActionListener(this);
             botones[i]= aux;
-            t.add(botones[i])
+            t.add(botones[i]);
         }
         return t;
     }
 
-    public void addActionPerformend(ActionEvent e) {
+    @Override
+    public void actionPerformed(ActionEvent e) {
         if(e.getSource() == resultado){
-            display.setTex(Double.parseDouble(c.resultadoDisplay(pantalla)));
+            String aux = Double.toString(c.resultadoDisplay(pantalla));
+            pantalla = aux;
+            c.reiniciar();
+            texto.setText(aux);
         }
         for(int i = 0; i<botones.length;i++){
             if (e.getSource() == botones[i]) {
                 System.out.println(botones[i].getText());
                 pantalla+=botones[i].getText();
-                display.setTex(pantalla);
+                texto.setText(pantalla);
             }
         }
         if(e.getSource() == botones[12]){
             pantalla = "";
-            display.setTex(pantalla);
-            c.reiniciar()
+            texto.setText(pantalla);
+            c.reiniciar();
         }
-                
         
     }
-
 }

@@ -4,7 +4,7 @@ import java.util.Queue;
 public class Calculadora {
     private String display;
     private Double resultado;
-    private Queue<String> cola = LinkedList<String>();
+    private Queue<String> cola = new LinkedList<String>();
 
     public Calculadora() {
         display = "";
@@ -33,13 +33,13 @@ public class Calculadora {
         char elemento = ' ';
         for (int i = 0; i < pantalla.length(); i++) {
             elemento = pantalla.charAt(i);
-            if (elemento != '+') {
+            if(elemento != '-' && elemento != '+' && elemento != '*' && elemento != '/') {
                 aux += elemento;
             } else {
                 cola.add(aux);
                 cola.add(Character.toString(elemento));
                 aux = "";
-            }
+            }           
         }
         cola.add(aux);
 
@@ -67,6 +67,10 @@ public class Calculadora {
 
             }
         return resultado;
+    }
+
+    public void reiniciar() {
+        resultado=0.0;
     }
 
 }
